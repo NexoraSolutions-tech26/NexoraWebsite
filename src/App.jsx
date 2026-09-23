@@ -7,6 +7,7 @@ import {
   ArrowRight, 
   Mail, 
   Phone, 
+  MessageSquare,
   Send, 
   Menu, 
   X, 
