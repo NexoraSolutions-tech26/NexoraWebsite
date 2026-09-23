@@ -54,6 +54,8 @@ export default function App() {
     service: 'Full-Stack Development',
     details: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
 
   const t = language === 'en'
     ? {
@@ -168,13 +170,38 @@ export default function App() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    const mailtoSubject = encodeURIComponent(`Project Inquiry from ${formData.name}`);
-    const mailtoBody = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nService Requested: ${formData.service}\n\nProject Details:\n${formData.details}`
-    );
-    window.location.href = `mailto:nexurtechpal@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+    setIsSubmitting(true);
+    setSubmitStatus('');
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/nexurtechpal@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          ...formData,
+          _subject: `Project Inquiry from ${formData.name}`,
+          _captcha: 'false',
+          _template: 'table'
+        })
+      });
+
+      const result = await response.json();
+      if (!response.ok || result.success !== 'true') {
+        throw new Error('Form submission failed');
+      }
+
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', service: 'Full-Stack Development', details: '' });
+    } catch {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -497,11 +524,24 @@ export default function App() {
 
             <button 
               type="submit" 
+              disabled={isSubmitting}
               className="w-full py-3 px-6 rounded-lg bg-zinc-100 text-zinc-900 font-semibold text-sm hover:bg-white transition-all flex items-center justify-center gap-2"
             >
               <Send className="w-4 h-4" />
-              {t.submitRequest}
+              {isSubmitting
+                ? (language === 'en' ? 'Sending...' : 'جارٍ الإرسال...')
+                : t.submitRequest}
             </button>
+            {submitStatus === 'success' && (
+              <p className="text-center text-sm text-emerald-400" role="status">
+                {language === 'en' ? 'Your request was sent successfully.' : 'تم إرسال طلبك بنجاح.'}
+              </p>
+            )}
+            {submitStatus === 'error' && (
+              <p className="text-center text-sm text-red-400" role="alert">
+                {language === 'en' ? 'Unable to send the request. Please try again.' : 'تعذر إرسال الطلب. حاول مرة أخرى.'}
+              </p>
+            )}
           </form>
         </div>
       </section>
