@@ -7,8 +7,6 @@ import {
   ArrowRight, 
   Mail, 
   Phone, 
-  Globe, 
-  MessageSquare, 
   Send, 
   Menu, 
   X, 
@@ -544,16 +542,24 @@ export default function App() {
                   target="_blank" 
                   rel="noreferrer" 
                   className="p-2 rounded-lg bg-zinc-800/60 text-zinc-300 hover:text-white hover:bg-zinc-700 transition-all"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
                 >
-                  <Globe className="w-4 h-4" />
+                  <svg viewBox="0 0 24 24" className="w-4 h-4" aria-hidden="true" fill="currentColor">
+                    <path d="M6.5 8.2H3.2V21h3.3V8.2ZM4.85 3A1.95 1.95 0 1 0 4.85 6.9 1.95 1.95 0 0 0 4.85 3ZM21 13.67c0-3.86-2.06-5.66-4.81-5.66-2.22 0-3.21 1.22-3.76 2.08V8.2H9.13V21h3.3v-6.34c0-1.67.32-3.29 2.39-3.29 2.04 0 2.07 1.91 2.07 3.4V21H21v-7.33Z" />
+                  </svg>
                 </a>
                 <a 
                   href="https://facebook.com" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="p-2 rounded-lg bg-zinc-800/60 text-zinc-300 hover:text-white hover:bg-zinc-700 transition-all"
+                  aria-label="Facebook"
+                  title="Facebook"
                 >
-                  <MessageSquare className="w-4 h-4" />
+                  <svg viewBox="0 0 24 24" className="w-4 h-4" aria-hidden="true" fill="currentColor">
+                    <path d="M13.5 21v-7h2.35l.35-2.73H13.5V9.53c0-.79.22-1.33 1.37-1.33h1.46V5.76c-.25-.03-1.11-.11-2.1-.11-2.08 0-3.5 1.27-3.5 3.6v2.02H8.38V14h2.35v7h2.77Z" />
+                  </svg>
                 </a>
               </div>
             </div>
