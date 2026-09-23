@@ -191,7 +191,7 @@ export default function App() {
       });
 
       const result = await response.json();
-      if (!response.ok || result.success !== 'true') {
+      if (!response.ok || (result.success !== 'true' && result.success !== true)) {
         throw new Error('Form submission failed');
       }
 
