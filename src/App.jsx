@@ -127,7 +127,7 @@ export default function App() {
         quoteTitle: 'اطلب عرض سعر لمشروعك',
         contactTitle: 'قنوات التواصل المباشرة',
         nameLabel: 'الاسم أو اسم الشركة',
-        namePlaceholder: 'مثال: إسراء - شركتك',
+        namePlaceholder: 'مثال: John Doe - شركتك',
         emailLabel: 'البريد الإلكتروني',
         serviceLabel: 'نوع الخدمة المطلوبة',
         serviceDevelopment: 'تطوير موقع / تطبيق متكامل (Full-Stack)',
