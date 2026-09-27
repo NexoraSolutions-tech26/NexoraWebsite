@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import coverImage from './assets/cover.jpg';
+import coverImage from './assets/nexoratech.jpg';
 import { 
   Code2, 
   CheckCircle2, 
@@ -22,13 +22,13 @@ function BrandMark({ compact = false }) {
 
   return (
     <div className={`relative ${sizeClass} flex items-center justify-center`}>
-      <svg viewBox="0 0 200 180" className="relative h-full w-full drop-shadow-[0_0_12px_rgba(245,172,109,0.18)]" aria-label="Nexura logo">
+      <svg viewBox="0 0 200 180" className="relative h-full w-full drop-shadow-[0_0_12px_rgba(56,189,248,0.2)]" aria-label="Nexora Tech Solutions logo">
         <defs>
           <linearGradient id="nexuraStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#f5d994" />
-            <stop offset="30%" stopColor="#f0b363" />
-            <stop offset="55%" stopColor="#d57bb3" />
-            <stop offset="100%" stopColor="#7e62de" />
+            <stop offset="0%" stopColor="#ead9b7" />
+            <stop offset="30%" stopColor="#39c5e8" />
+            <stop offset="55%" stopColor="#268fd2" />
+            <stop offset="100%" stopColor="#245bb5" />
           </linearGradient>
         </defs>
 
@@ -67,9 +67,9 @@ export default function App() {
         secondaryCta: 'Explore services',
         tag: 'We build software with precision and competitive value',
         headline: 'Engineering solutions that power growth',
-        subheadline: 'At Nexura Technologies, we design scalable digital systems for business growth, automation, and quality assurance.',
-        navBrand: 'nexura',
-        navTech: 'tech',
+        subheadline: 'At Nexora Tech Solutions, we design scalable digital systems for business growth, automation, and quality assurance.',
+        navBrand: 'nexora',
+        navTech: 'tech solutions',
         aboutTitle: 'We build software with strategy and precision',
         servicesTitle: 'Flexible solutions designed for your goals',
         quoteTitle: 'Request a project quote',
@@ -120,9 +120,9 @@ export default function App() {
         secondaryCta: 'استعراض الخدمات',
         tag: 'نطوّر الحلول البرمجية بعناية فائقة وتكلفة منافسة',
         headline: 'حلول هندسية متكاملة لنمو أعمالك',
-        subheadline: 'في Nexura Technologies، نقدم أنظمة رقمية قابلة للتطوير تدعم النمو، التشغيل الآلي، وجودة التنفيذ.',
-        navBrand: 'nexura',
-        navTech: 'tech',
+        subheadline: 'في Nexora Tech Solutions، نقدم أنظمة رقمية قابلة للتطوير تدعم النمو، التشغيل الآلي، وجودة التنفيذ.',
+        navBrand: 'nexora',
+        navTech: 'tech solutions',
         aboutTitle: 'رؤية هندسية تسعى إلى الكمال البرمجي',
         servicesTitle: 'حلول مرنة ومخصصة حسب احتياجك',
         quoteTitle: 'اطلب عرض سعر لمشروعك',
@@ -176,7 +176,7 @@ export default function App() {
     setSubmitStatus('');
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/nexurtechpal@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/nexoratech.solutions@outlook.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -205,23 +205,23 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#0d0a0a] text-zinc-100 font-sans selection:bg-[#c98d74] selection:text-[#1b1413]">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(175,118,95,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(110,81,72,0.12),transparent_24%)]" />
+    <div className="relative min-h-screen overflow-hidden bg-[#091522] text-zinc-100 font-sans selection:bg-[#39bde3] selection:text-[#071521]">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(42,157,204,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(196,174,135,0.1),transparent_24%)]" />
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800/60 bg-[#0A0A0B]/80 backdrop-blur-md">
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#294258]/60 bg-[#091522]/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
-            <div className="h-10 w-10 overflow-hidden rounded-full border border-white/10 bg-[#1b1018]/70 p-1 shadow-[0_0_18px_rgba(234,142,114,0.18)]">
+            <div className="h-10 w-10 overflow-hidden rounded-full border border-white/10 bg-[#10283b]/80 p-1 shadow-[0_0_18px_rgba(56,189,248,0.2)]">
               <img
                 src={coverImage}
-                alt="Nexura technology cover"
+                alt="Nexora Tech Solutions logo"
                 className="h-full w-full rounded-full object-cover object-center"
               />
             </div>
             <div className="flex items-baseline gap-2">
               <span className="text-lg font-black tracking-[-0.05em] text-[#f3f1ef]">{t.navBrand}</span>
-              <span className="text-[10px] uppercase tracking-[0.25em] text-[#d8c3d7]">{t.navTech}</span>
+              <span className="text-[10px] uppercase tracking-[0.25em] text-[#d8c6a5]">{t.navTech}</span>
             </div>
           </div>
 
@@ -233,16 +233,16 @@ export default function App() {
           </div>
 
           <div className="hidden md:flex items-center gap-3 rtl:space-x-reverse">
-            <div className="flex items-center rounded-full border border-[#8a5f58]/30 bg-[#171212]/80 p-1 text-[10px] font-medium text-zinc-300">
+            <div className="flex items-center rounded-full border border-[#4e718b]/40 bg-[#102236]/90 p-1 text-[10px] font-medium text-zinc-300">
               <button
                 onClick={() => setLanguage('ar')}
-                className={`rounded-full px-2 py-1 ${language === 'ar' ? 'bg-[#d7a98f] text-[#1a1212]' : 'text-zinc-300'}`}
+                className={`rounded-full px-2 py-1 ${language === 'ar' ? 'bg-[#e4d2ae] text-[#102033]' : 'text-zinc-300'}`}
               >
                 AR
               </button>
               <button
                 onClick={() => setLanguage('en')}
-                className={`rounded-full px-2 py-1 ${language === 'en' ? 'bg-[#d7a98f] text-[#1a1212]' : 'text-zinc-300'}`}
+                className={`rounded-full px-2 py-1 ${language === 'en' ? 'bg-[#e4d2ae] text-[#102033]' : 'text-zinc-300'}`}
               >
                 EN
               </button>
@@ -252,9 +252,9 @@ export default function App() {
               href="https://wa.me/970569427636" 
               target="_blank" 
               rel="noreferrer" 
-              className="inline-flex items-center gap-2 rounded-md border border-[#b89d8c]/35 bg-gradient-to-r from-[#c38d74]/10 via-zinc-900 to-zinc-900 px-4 py-2 text-xs font-medium text-zinc-200 transition-all hover:border-[#b89d8c]/60 hover:text-white"
+              className="inline-flex items-center gap-2 rounded-md border border-[#d5c29e]/35 bg-gradient-to-r from-[#17354a]/80 via-[#101f30] to-[#101f30] px-4 py-2 text-xs font-medium text-zinc-200 transition-all hover:border-[#d5c29e]/70 hover:text-white"
             >
-              <MessageSquare className="h-3.5 w-3.5 text-[#d5c4b8]" />
+              <MessageSquare className="h-3.5 w-3.5 text-[#48c7e8]" />
               {language === 'en' ? 'WhatsApp' : 'تواصل واتساب'}
             </a>
           </div>
@@ -269,19 +269,35 @@ export default function App() {
 
         {/* Mobile Dropdown */}
         {isMenuOpen && (
-          <div className="md:hidden bg-[#0A0A0B] border-b border-zinc-800 px-6 py-4 space-y-4 text-sm font-medium text-zinc-300">
-            <a href="#about" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">عن الشركة</a>
-            <a href="#services" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">الخدمات</a>
-            <a href="#quote" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">طلب عرض سعر</a>
-            <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">التواصل</a>
+          <div className="md:hidden bg-[#091522] border-b border-[#294258] px-6 py-4 space-y-4 text-sm font-medium text-zinc-300">
+            <div className="flex w-fit items-center rounded-full border border-[#4e718b]/50 bg-[#102236] p-1 text-xs">
+              <button
+                onClick={() => setLanguage('ar')}
+                className={`rounded-full px-3 py-1.5 ${language === 'ar' ? 'bg-[#e4d2ae] text-[#102033]' : 'text-zinc-300 hover:text-white'}`}
+                aria-pressed={language === 'ar'}
+              >
+                العربية
+              </button>
+              <button
+                onClick={() => setLanguage('en')}
+                className={`rounded-full px-3 py-1.5 ${language === 'en' ? 'bg-[#e4d2ae] text-[#102033]' : 'text-zinc-300 hover:text-white'}`}
+                aria-pressed={language === 'en'}
+              >
+                English
+              </button>
+            </div>
+            <a href="#about" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.about}</a>
+            <a href="#services" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.services}</a>
+            <a href="#quote" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.quote}</a>
+            <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.contact}</a>
             <a 
               href="https://wa.me/970569427636" 
               target="_blank" 
               rel="noreferrer" 
               className="inline-flex items-center justify-center w-full gap-2 px-4 py-2 rounded-md bg-zinc-900 border border-zinc-700 text-xs font-medium text-zinc-200"
             >
-              <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-              محادثات الواتساب المباشرة
+              <MessageSquare className="w-3.5 h-3.5 text-[#48c7e8]" />
+              {language === 'en' ? 'WhatsApp' : 'محادثات الواتساب المباشرة'}
             </a>
           </div>
         )}
@@ -289,19 +305,19 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-zinc-800/40 px-6 pb-24 pt-28 md:pt-32">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(175,118,95,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(110,81,72,0.12),transparent_24%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(42,157,204,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(196,174,135,0.1),transparent_24%)]" />
 
         <div className="relative mx-auto max-w-4xl space-y-8 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#d9b59d]/20 bg-[#171212]/80 px-3 py-1 text-[10px] text-[#e7d7cd] shadow-[0_0_25px_rgba(164,116,92,0.1)] md:text-xs">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-[#d7a38a]"></span>
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#d7c39f]/30 bg-[#102236]/90 px-3 py-1 text-[10px] text-[#eadfc9] shadow-[0_0_25px_rgba(56,189,248,0.1)] md:text-xs">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-[#42c5e4]"></span>
             {t.tag}
           </div>
 
           <div className="flex flex-col items-center justify-center gap-3">
-            <div className="h-36 w-36 overflow-hidden rounded-full border border-white/10 bg-[#1b1018]/70 p-1 shadow-[0_0_50px_rgba(225,118,120,0.2)] md:h-44 md:w-44">
+            <div className="h-36 w-36 overflow-hidden rounded-full border border-[#8ecce3]/30 bg-[#10283b]/80 p-1 shadow-[0_0_50px_rgba(56,189,248,0.22)] md:h-44 md:w-44">
               <img
                 src={coverImage}
-                alt="Nexura technology cover"
+                alt="Nexora Tech Solutions logo"
                 className="h-full w-full rounded-full object-cover object-center"
               />
             </div>
@@ -309,7 +325,7 @@ export default function App() {
 
           <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-white md:text-5xl">
             {t.headline} <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-[#f5e7dd] via-[#d7ae8d] to-[#bf7d68] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-[#d9c8a8] to-[#48c7e8] bg-clip-text text-transparent">
               {language === 'en' ? 'Software, Automation & QA' : 'برمجة، أتمتة، واختبار جودة'}
             </span>
           </h1>
@@ -321,14 +337,14 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <a 
               href="#quote" 
-              className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-[#f0d9c8] via-[#c98d72] to-[#9d645c] px-6 py-3 text-sm font-semibold text-[#1a1412] shadow-[0_10px_30px_rgba(156,100,82,0.24)] transition-all hover:brightness-110 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-[#ead9b7] via-[#a9dbea] to-[#42b9df] px-6 py-3 text-sm font-semibold text-[#0b1b2a] shadow-[0_10px_30px_rgba(56,189,248,0.2)] transition-all hover:brightness-110 sm:w-auto"
             >
               {t.cta}
               <ArrowRight className="h-4 w-4 rtl:rotate-180" />
             </a>
             <a 
               href="#services" 
-              className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-medium text-zinc-300 transition-all hover:border-zinc-600 hover:bg-zinc-800 hover:text-white sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-[#38536a] bg-[#102236] px-6 py-3 text-sm font-medium text-zinc-300 transition-all hover:border-[#4b9ab8] hover:bg-[#17364b] hover:text-white sm:w-auto"
             >
               {t.secondaryCta}
             </a>
@@ -340,13 +356,13 @@ export default function App() {
       <section id="about" className="py-20 px-6 border-b border-zinc-800/40 bg-zinc-950/40">
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="max-w-2xl space-y-3">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#d7b199]">{language === 'en' ? 'About' : 'عن الشركة'}</span>
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#48c7e8]">{language === 'en' ? 'About' : 'عن الشركة'}</span>
             <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">{t.aboutSectionTitle}</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800/80 space-y-3">
-              <Terminal className="w-6 h-6 text-[#d6a486]" />
+              <Terminal className="w-6 h-6 text-[#48c7e8]" />
               <h3 className="font-semibold text-lg text-zinc-100">{t.aboutCodeTitle}</h3>
               <p className="text-xs text-zinc-400 leading-relaxed">
                 {t.aboutCodeText}
@@ -354,7 +370,7 @@ export default function App() {
             </div>
 
             <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800/80 space-y-3">
-              <Zap className="w-6 h-6 text-[#d6a486]" />
+              <Zap className="w-6 h-6 text-[#48c7e8]" />
               <h3 className="font-semibold text-lg text-zinc-100">{t.aboutAutomationTitle}</h3>
               <p className="text-xs text-zinc-400 leading-relaxed">
                 {t.aboutAutomationText}
@@ -362,7 +378,7 @@ export default function App() {
             </div>
 
             <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800/80 space-y-3">
-              <ShieldCheck className="w-6 h-6 text-[#d6a486]" />
+              <ShieldCheck className="w-6 h-6 text-[#48c7e8]" />
               <h3 className="font-semibold text-lg text-zinc-100">{t.aboutQaTitle}</h3>
               <p className="text-xs text-zinc-400 leading-relaxed">
                 {t.aboutQaText}
@@ -376,7 +392,7 @@ export default function App() {
       <section id="services" className="py-24 px-6 border-b border-zinc-800/40">
         <div className="max-w-5xl mx-auto space-y-16">
           <div className="text-center space-y-3 max-w-xl mx-auto">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#d7b199]">{language === 'en' ? 'Our Services' : 'خدماتنا الرئيسية'}</span>
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#48c7e8]">{language === 'en' ? 'Our Services' : 'خدماتنا الرئيسية'}</span>
             <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">{t.servicesTitle}</h2>
           </div>
 
@@ -384,8 +400,8 @@ export default function App() {
             {/* Service 1 */}
             <div className="p-8 rounded-2xl bg-zinc-900/30 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col justify-between space-y-8">
               <div className="space-y-4">
-                <div className="w-10 h-10 rounded-lg bg-zinc-800/80 border border-[#b89d8c]/30 flex items-center justify-center">
-                  <Code2 className="w-5 h-5 text-[#d2b3a0]" />
+                <div className="w-10 h-10 rounded-lg bg-[#173044] border border-[#4e718b]/50 flex items-center justify-center">
+                  <Code2 className="w-5 h-5 text-[#48c7e8]" />
                 </div>
                 <h3 className="text-xl font-bold text-white">Full-Stack Development</h3>
                 <p className="text-xs text-zinc-400 leading-relaxed">
@@ -393,13 +409,13 @@ export default function App() {
                 </p>
                 <ul className="space-y-2 text-xs text-zinc-300 pt-2">
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.developmentFeatureOne}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.developmentFeatureOne}
                   </li>
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.developmentFeatureTwo}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.developmentFeatureTwo}
                   </li>
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.developmentFeatureThree}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.developmentFeatureThree}
                   </li>
                 </ul>
               </div>
@@ -408,8 +424,8 @@ export default function App() {
             {/* Service 2 */}
             <div className="p-8 rounded-2xl bg-zinc-900/30 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col justify-between space-y-8">
               <div className="space-y-4">
-                <div className="w-10 h-10 rounded-lg bg-zinc-800/80 border border-[#b89d8c]/30 flex items-center justify-center">
-                  <Bot className="w-5 h-5 text-[#d2b3a0]" />
+                <div className="w-10 h-10 rounded-lg bg-[#173044] border border-[#4e718b]/50 flex items-center justify-center">
+                  <Bot className="w-5 h-5 text-[#48c7e8]" />
                 </div>
                 <h3 className="text-xl font-bold text-white">Business Automation</h3>
                 <p className="text-xs text-zinc-400 leading-relaxed">
@@ -417,13 +433,13 @@ export default function App() {
                 </p>
                 <ul className="space-y-2 text-xs text-zinc-300 pt-2">
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.automationFeatureOne}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.automationFeatureOne}
                   </li>
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.automationFeatureTwo}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.automationFeatureTwo}
                   </li>
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.automationFeatureThree}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.automationFeatureThree}
                   </li>
                 </ul>
               </div>
@@ -432,8 +448,8 @@ export default function App() {
             {/* Service 3 */}
             <div className="p-8 rounded-2xl bg-zinc-900/30 border border-zinc-800/80 hover:border-zinc-700 transition-all flex flex-col justify-between space-y-8">
               <div className="space-y-4">
-                <div className="w-10 h-10 rounded-lg bg-zinc-800/80 border border-[#b89d8c]/30 flex items-center justify-center">
-                  <CheckCircle2 className="w-5 h-5 text-[#d2b3a0]" />
+                <div className="w-10 h-10 rounded-lg bg-[#173044] border border-[#4e718b]/50 flex items-center justify-center">
+                  <CheckCircle2 className="w-5 h-5 text-[#48c7e8]" />
                 </div>
                 <h3 className="text-xl font-bold text-white">Software QA & Testing</h3>
                 <p className="text-xs text-zinc-400 leading-relaxed">
@@ -441,13 +457,13 @@ export default function App() {
                 </p>
                 <ul className="space-y-2 text-xs text-zinc-300 pt-2">
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.qaFeatureOne}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.qaFeatureOne}
                   </li>
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.qaFeatureTwo}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.qaFeatureTwo}
                   </li>
                   <li className="flex items-center gap-2">
-                    <ChevronRight className="w-3.5 h-3.5 text-[#d2b3a0]" /> {t.qaFeatureThree}
+                    <ChevronRight className="w-3.5 h-3.5 text-[#48c7e8]" /> {t.qaFeatureThree}
                   </li>
                 </ul>
               </div>
@@ -460,7 +476,7 @@ export default function App() {
       <section id="quote" className="py-24 px-6 border-b border-zinc-800/40 bg-zinc-950/40">
         <div className="max-w-3xl mx-auto space-y-12">
           <div className="text-center space-y-3">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#d7b199]">{language === 'en' ? 'Free Consultation' : 'استشارة مجانية'}</span>
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#48c7e8]">{language === 'en' ? 'Free Consultation' : 'استشارة مجانية'}</span>
             <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">{language === 'en' ? 'Request a project quote' : 'اطلب عرض سعر لمشروعك'}</h2>
             <p className="text-xs text-zinc-400">{language === 'en' ? 'Share your initial project details and we will contact you with the best option and a competitive price.' : 'عبي البيانات المبدئية وسنقوم بالتواصل معك لتزويدك بالخيار الأنسب وبسعر منافس.'}</p>
           </div>
@@ -556,12 +572,12 @@ export default function App() {
 
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <a 
-              href="mailto:nexurtechpal@gmail.com" 
+              href="mailto:nexoratech.solutions@outlook.com" 
               className="p-6 rounded-xl bg-zinc-900/20 border border-zinc-800/60 hover:border-zinc-700 transition-all space-y-2 group"
             >
-              <Mail className="w-5 h-5 mx-auto text-[#d2b3a0] group-hover:scale-110 transition-transform" />
+              <Mail className="w-5 h-5 mx-auto text-[#48c7e8] group-hover:scale-110 transition-transform" />
               <div className="text-xs text-zinc-400">{t.emailContactLabel}</div>
-              <div className="text-sm font-semibold text-zinc-200">nexurtechpal@gmail.com</div>
+              <div className="text-sm font-semibold text-zinc-200">nexoratech.solutions@outlook.com</div>
             </a>
 
             <a 
@@ -570,7 +586,7 @@ export default function App() {
               rel="noreferrer"
               className="p-6 rounded-xl bg-zinc-900/20 border border-zinc-800/60 hover:border-zinc-700 transition-all space-y-2 group"
             >
-              <Phone className="w-5 h-5 mx-auto text-[#d2b3a0] group-hover:scale-110 transition-transform" />
+              <Phone className="w-5 h-5 mx-auto text-[#48c7e8] group-hover:scale-110 transition-transform" />
               <div className="text-xs text-zinc-400">{t.phoneContactLabel}</div>
               <div className="text-sm font-semibold text-zinc-200" dir="ltr">+970 569 427 636</div>
             </a>
@@ -612,12 +628,12 @@ export default function App() {
       <footer className="py-8 px-6 bg-zinc-950 text-xs text-zinc-500">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            © {new Date().getFullYear()} Nexura Technologies. {t.footerRights}
+            © {new Date().getFullYear()} Nexora Tech Solutions. {t.footerRights}
           </div>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <span>{t.footerLocation}</span>
             <span>•</span>
-            <a href="mailto:nexurtechpal@gmail.com" className="hover:text-zinc-300">nexurtechpal@gmail.com</a>
+            <a href="mailto:nexoratech.solutions@outlook.com" className="hover:text-zinc-300">nexoratech.solutions@outlook.com</a>
           </div>
         </div>
       </footer>
