@@ -61,6 +61,7 @@ export default function App() {
     ? {
         about: 'About',
         services: 'Services',
+        projects: 'Our Work',
         quote: 'Quote',
         contact: 'Contact',
         cta: 'Get a free quote',
@@ -72,6 +73,13 @@ export default function App() {
         navTech: 'tech solutions',
         aboutTitle: 'We build software with strategy and precision',
         servicesTitle: 'Flexible solutions designed for your goals',
+        projectsTitle: 'Selected projects',
+        projectsDescription: 'A look at some of the websites we have built for our clients.',
+        samaDescription: 'A website for custom-made wooden kitchens, furniture, and interior design.',
+        optionDescription: 'A website showcasing central air conditioning and duct design and installation services.',
+        samaCategory: 'Interior design',
+        optionCategory: 'HVAC engineering',
+        visitProject: 'Visit website',
         quoteTitle: 'Request a project quote',
         contactTitle: 'Direct contact channels',
         nameLabel: 'Name or company name',
@@ -114,6 +122,7 @@ export default function App() {
     : {
         about: 'عن الشركة',
         services: 'الخدمات',
+        projects: 'من أعمالنا',
         quote: 'طلب عرض سعر',
         contact: 'التواصل',
         cta: 'طلب عرض سعر مجاني',
@@ -125,6 +134,13 @@ export default function App() {
         navTech: 'tech solutions',
         aboutTitle: 'رؤية هندسية تسعى إلى الكمال البرمجي',
         servicesTitle: 'حلول مرنة ومخصصة حسب احتياجك',
+        projectsTitle: 'نماذج من أعمالنا',
+        projectsDescription: 'تعرّف على بعض المواقع التي طورناها لعملائنا.',
+        samaDescription: 'موقع متخصص في المطابخ والأثاث الخشبي المصمم حسب الطلب والديكورات الداخلية.',
+        optionDescription: 'موقع يعرض خدمات تصميم وتركيب أنظمة التكييف المركزي والدكت.',
+        samaCategory: 'تصميم داخلي وأثاث',
+        optionCategory: 'هندسة التكييف',
+        visitProject: 'زيارة الموقع',
         quoteTitle: 'اطلب عرض سعر لمشروعك',
         contactTitle: 'قنوات التواصل المباشرة',
         nameLabel: 'الاسم أو اسم الشركة',
@@ -228,6 +244,7 @@ export default function App() {
           <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse text-sm font-medium text-zinc-400">
             <a href="#about" className="hover:text-white transition-colors">{t.about}</a>
             <a href="#services" className="hover:text-white transition-colors">{t.services}</a>
+            <a href="#projects" className="hover:text-white transition-colors">{t.projects}</a>
             <a href="#quote" className="hover:text-white transition-colors">{t.quote}</a>
             <a href="#contact" className="hover:text-white transition-colors">{t.contact}</a>
           </div>
@@ -288,6 +305,7 @@ export default function App() {
             </div>
             <a href="#about" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.about}</a>
             <a href="#services" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.services}</a>
+            <a href="#projects" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.projects}</a>
             <a href="#quote" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.quote}</a>
             <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block py-1 hover:text-white">{t.contact}</a>
             <a 
@@ -468,6 +486,75 @@ export default function App() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section id="projects" className="py-24 px-6 border-b border-zinc-800/40 bg-zinc-950/40">
+        <div className="max-w-6xl mx-auto space-y-12 md:space-y-14">
+          <div className="text-center space-y-4 max-w-2xl mx-auto">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#48c7e8]">{t.projects}</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">{t.projectsTitle}</h2>
+            <p className="text-sm md:text-base leading-relaxed text-zinc-400">{t.projectsDescription}</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            <article className="group overflow-hidden rounded-2xl border border-[#294258]/70 bg-gradient-to-b from-[#102236]/90 to-[#0b1724] shadow-[0_18px_55px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#48c7e8]/50 hover:shadow-[0_24px_65px_rgba(20,119,157,0.14)]">
+              <a href="https://samadesign.onrender.com/" target="_blank" rel="noreferrer" aria-label={t.visitProject + ': Sama Design'} className="relative block overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=82"
+                  alt={language === 'en' ? 'Modern wooden kitchen interior' : 'تصميم مطبخ خشبي عصري'}
+                  className="aspect-[16/9] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07111d]/75 via-transparent to-[#07111d]/10" />
+                <span className="absolute start-4 top-4 rounded-full border border-white/20 bg-[#091522]/75 px-3 py-1 text-[11px] font-medium text-white backdrop-blur-md">
+                  {t.samaCategory}
+                </span>
+                <span className="absolute bottom-4 end-4 rounded-full border border-white/20 bg-[#091522]/70 p-2 text-white backdrop-blur-md transition-all group-hover:border-[#48c7e8]/60 group-hover:bg-[#48c7e8] group-hover:text-[#07111d]">
+                  <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                </span>
+              </a>
+              <div className="flex flex-col gap-5 p-5 sm:p-7">
+                <div className="space-y-2">
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#48c7e8]">01 / {t.projects}</div>
+                  <h3 className="text-xl font-bold text-white">Sama Design</h3>
+                  <p className="text-sm leading-7 text-zinc-400">{t.samaDescription}</p>
+                </div>
+                <a href="https://samadesign.onrender.com/" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-2 rounded-lg border border-[#38536a] bg-[#102236]/70 px-4 py-2.5 text-xs font-semibold text-zinc-200 transition-all hover:border-[#48c7e8]/60 hover:bg-[#17364b] hover:text-white">
+                  {t.visitProject}<ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" />
+                </a>
+              </div>
+            </article>
+
+            <article className="group overflow-hidden rounded-2xl border border-[#294258]/70 bg-gradient-to-b from-[#102236]/90 to-[#0b1724] shadow-[0_18px_55px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-[#48c7e8]/50 hover:shadow-[0_24px_65px_rgba(20,119,157,0.14)]">
+              <a href="https://optionforduct.onrender.com/" target="_blank" rel="noreferrer" aria-label={t.visitProject + ': Option for Duct'} className="relative block overflow-hidden">
+                <img
+                  src="https://optionforduct.onrender.com/work7.jpeg"
+                  alt={language === 'en' ? 'Central air conditioning duct installation project' : 'مشروع تنفيذ دكت تكييف مركزي'}
+                  className="aspect-[16/9] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07111d]/75 via-transparent to-[#07111d]/10" />
+                <span className="absolute start-4 top-4 rounded-full border border-white/20 bg-[#091522]/75 px-3 py-1 text-[11px] font-medium text-white backdrop-blur-md">
+                  {t.optionCategory}
+                </span>
+                <span className="absolute bottom-4 end-4 rounded-full border border-white/20 bg-[#091522]/70 p-2 text-white backdrop-blur-md transition-all group-hover:border-[#48c7e8]/60 group-hover:bg-[#48c7e8] group-hover:text-[#07111d]">
+                  <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                </span>
+              </a>
+              <div className="flex flex-col gap-5 p-5 sm:p-7">
+                <div className="space-y-2">
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#48c7e8]">02 / {t.projects}</div>
+                  <h3 className="text-xl font-bold text-white">Option for Duct</h3>
+                  <p className="text-sm leading-7 text-zinc-400">{t.optionDescription}</p>
+                </div>
+                <a href="https://optionforduct.onrender.com/" target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-2 rounded-lg border border-[#38536a] bg-[#102236]/70 px-4 py-2.5 text-xs font-semibold text-zinc-200 transition-all hover:border-[#48c7e8]/60 hover:bg-[#17364b] hover:text-white">
+                  {t.visitProject}<ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" />
+                </a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
