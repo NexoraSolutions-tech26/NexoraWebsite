@@ -595,7 +595,7 @@ export default function App() {
               <div className="text-xs text-zinc-400">{t.socialContactLabel}</div>
               <div className="flex items-center justify-center gap-4 pt-1">
                 <a 
-                  href="https://www.linkedin.com/in/nexura-technologies-591710439/" 
+                  href="https://www.linkedin.com/in/nexora-solutions-8078b2441/" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="p-2 rounded-lg bg-zinc-800/60 text-zinc-300 hover:text-white hover:bg-zinc-700 transition-all"
@@ -607,15 +607,15 @@ export default function App() {
                   </svg>
                 </a>
                 <a 
-                  href="https://facebook.com" 
+                  href="https://www.instagram.com/nexoratech.solutions/" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="p-2 rounded-lg bg-zinc-800/60 text-zinc-300 hover:text-white hover:bg-zinc-700 transition-all"
-                  aria-label="Facebook"
-                  title="Facebook"
+                  aria-label="Instagram"
+                  title="Instagram"
                 >
                   <svg viewBox="0 0 24 24" className="w-4 h-4" aria-hidden="true" fill="currentColor">
-                    <path d="M13.5 21v-7h2.35l.35-2.73H13.5V9.53c0-.79.22-1.33 1.37-1.33h1.46V5.76c-.25-.03-1.11-.11-2.1-.11-2.08 0-3.5 1.27-3.5 3.6v2.02H8.38V14h2.35v7h2.77Z" />
+                    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
                   </svg>
                 </a>
               </div>
